@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Store</title>
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="topo">
-            <div class="logo">Digital Store</div>
-            <div class="buscador">
-                <input type="text" placeholder="Pesquisar produto..." />
-            </div>
-            <div class="acoes">
-                <a href="">Cadastre-se</a>
-                <a href="">Entrar</a>
-            </div>
+      <div class="topo">
+        <div class="logo">
+          <img src="img/logo.png.png" alt="logo" />Digital Store
         </div>
-        <nav>
-            <a href="http://">Home</a>
-            <a href="http://">Produtos</a>
-            <a href="http://">Categorias</a>
-            <a href="http://">Meus Pedidos</a>
-        </nav>
+        <div class="buscador">
+          <input type="text" placeholder="Pesquisar produto..." />
+          <img src="img/Search.png" alt="lupa" />
+        </div>
+        <div class="acoes">
+          <a href="">Cadastre-se</a>
+          <a class="btn" href="">Entrar</a>
+          <div class="carrinho">
+            <img src="img/carrinho.png" alt="carrinho" />
+            <span>2</span>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <a href="http://" class="active">Home</a>
+        <a href="http://">Produtos</a>
+        <a href="http://">Categorias</a>
+        <a href="http://">Meus Pedidos</a>
+      </nav>
     </header>
-</body>
-
+    <main>
+      <section id="banner"></section>
+      <section id="destaques"></section>
+      <section id="produtos"></section>
+    </main>
+  </body>
 </html>

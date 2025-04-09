@@ -9,6 +9,20 @@
   font-family: "Inter", sans-serif;
   text-decoration: none;
 }
+.btn{
+  line-height: 40px;
+  background-color: #c92071;
+  color: white !important;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+  transition-duration: 200ms;
+  &:hover{
+    background-color: #EE4266;
+  }
+}
 
 header {
   background-color: white;
@@ -21,6 +35,9 @@ header {
       font-size: 36px;
       font-weight: 600;
       color: #c92071;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
     .buscador {
         flex: 1;
@@ -28,10 +45,9 @@ header {
         border-radius: 8px;
         margin-left: 27px;
         margin-right: 28px;
-        
-
-
-
+        display: flex;
+        align-items: center;
+        padding-right: 16px;
         
         input{
             width: 100%;
@@ -40,6 +56,40 @@ header {
             padding-left: 24px;
         }
         
+    } 
+
+    .acoes{
+      display: flex;
+      align-items: center;
+
+      a{
+        color:#474747;
+        text-decoration: underline;
+        
+        &.btn{
+          width: 144px;
+          margin-left: 30px;
+          margin-right: 70px;
+          text-decoration: none;
+        }
+      }
+      .carrinho{
+        position: relative;
+        span{
+          min-width: 17px;
+          line-height: 17px;
+          border-radius: 100%;
+          background-color: #EE4266;
+          color: white;
+          text-align: center;
+          font-weight: bold;
+          font-size: 12px;
+          display: block;
+          position: absolute;
+          top: -9px;
+          right: -1px;
+        }
+      }
     }
     
 }
@@ -53,6 +103,11 @@ nav{
     a{
         color: #474747;
         transition-duration: 200ms;
+        &.active{
+            color: #c92071;
+        font-weight: bold;
+        border-bottom: 2px solid #c92071;
+      }
         &:hover{
             color: #c92071;
         }
