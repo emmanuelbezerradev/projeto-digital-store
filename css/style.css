@@ -9,6 +9,7 @@
   font-family: "Inter", sans-serif;
   text-decoration: none;
 }
+
 .btn {
   line-height: 40px;
   background-color: #c92071;
@@ -19,13 +20,16 @@
   text-align: center;
   display: block;
   transition-duration: 200ms;
+
   &:hover {
     background-color: #ee4266;
   }
-  &.inverso{
+
+  &.inverso {
     background-color: #f5f5f5;
     color: #c92071 !important;
-    &:hover{
+
+    &:hover {
       background-color: #b5b6f2;
       color: white !important;
     }
@@ -35,6 +39,7 @@
 header {
   background-color: white;
   padding: 34px 100px 29px 100px;
+
   .topo {
     display: flex;
     align-items: center;
@@ -47,6 +52,7 @@ header {
       align-items: center;
       gap: 8px;
     }
+
     .buscador {
       flex: 1;
       background-color: #47474710;
@@ -80,8 +86,10 @@ header {
           text-decoration: none;
         }
       }
+
       .carrinho {
         position: relative;
+
         span {
           min-width: 17px;
           line-height: 17px;
@@ -109,16 +117,19 @@ nav {
   a {
     color: #474747;
     transition-duration: 200ms;
+
     &.active {
       color: #c92071;
       font-weight: bold;
       border-bottom: 2px solid #c92071;
     }
+
     &:hover {
       color: #c92071;
     }
   }
 }
+
 main {
   .tenis {
     width: 733px;
@@ -134,58 +145,64 @@ main {
       font-size: 24px;
       margin-bottom: 20px;
     }
+
     .colecoes {
       display: flex;
       gap: 12px;
       margin-bottom: 100px;
 
-      & > div{
-        background-color: #D8E3F2;
+      & > div {
+        background-color: #d8e3f2;
         flex: 1;
         padding-left: 30px;
-        padding-top: 34px; 
+        padding-top: 34px;
         padding-bottom: 34px;
-        position: relative; 
+        position: relative;
         border-radius: 8px;
-        
-        & .conteudo{
+
+        & .conteudo {
           position: relative;
           z-index: 1;
         }
-        h6{
+
+        h6 {
           font-size: 14px;
           text-transform: uppercase;
           line-height: 32px;
           padding: 0 15px;
           border-radius: 20px;
-          background-color: #E7FF86;
+          background-color: #e7ff86;
           display: inline-block;
           margin-bottom: 10px;
         }
-        h2{
+
+        h2 {
           font-size: 32px;
           margin-bottom: 20px;
-
         }
-        .btn{
+
+        .btn {
           width: 150px;
         }
-        img{
+
+        img {
           position: absolute;
           right: 0;
           bottom: 0;
         }
       }
+
       & + h3 {
         text-align: center;
       }
     }
-    .Departamentos{
+
+    .departamentos {
       display: flex;
       justify-content: center;
       gap: 48px;
 
-      .icon{
+      .icon {
         width: 104px;
         height: 104px;
         border-radius: 50%;
@@ -195,16 +212,19 @@ main {
         display: flex;
         align-items: center;
         transition-duration: 200ms;
-        
-        
       }
-      .icon:hover{
+
+      .icon:hover {
         box-shadow: 0 0 70px #00000020;
       }
-      .icon img{
-      width: 64px;
+
+      .icon img {
+        width: 64px;
       }
-      .icon bone{
+
+      .icon bone {
         width: 95px;
       }
+    }
+  }
 }
